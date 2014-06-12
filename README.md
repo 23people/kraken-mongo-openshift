@@ -1,0 +1,2 @@
+kraken-mongo-openshift
+======================
