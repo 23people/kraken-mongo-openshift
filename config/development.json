@@ -57,7 +57,7 @@
 
     "databaseConfig": {
       "mongoDbUrl" : "mongodb://localhost:27017/",
-      "dbName": "app"
+      "dbName": "dev-app-db"
     }
 
 }

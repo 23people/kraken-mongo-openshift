@@ -1,11 +1,17 @@
 'use strict';
 
 
+
+
 var kraken = require('kraken-js'),
     app = require('express')(),
+    db = require('./lib/database'),
     options = {
         onconfig: function (config, next) {
             //any config setup/overrides here
+
+            db.config(config.get('databaseConfig'));
+
             next(null, config);
         }
     },
