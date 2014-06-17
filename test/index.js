@@ -35,7 +35,7 @@ describe('/', function () {
             .get('/')
             .expect(200)
             .expect('Content-Type', /html/)
-            .expect(/Hello, /)
+            .expect(/MongoDb: disconnected/)
             .end(function (err, res) {
                 done(err);
             });
