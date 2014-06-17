@@ -77,8 +77,8 @@
     },
 
     "databaseConfig": {
-  		"mongoDbUrl" : "OPENSHIFT_MONGODB_DB_URL",
-      "dbName": "OPENSHIFT_APP_NAME"
+  		"mongoDbUrl" : "env:OPENSHIFT_MONGODB_DB_URL",
+      "dbName": "env:OPENSHIFT_APP_NAME"
   	}
 
 }
