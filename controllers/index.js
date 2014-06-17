@@ -1,18 +1,20 @@
 'use strict';
 
-
-var IndexModel = require('../models/index');
-
+var mongoose = require('mongoose');
 
 module.exports = function (router) {
 
-    var model = new IndexModel();
-
 
     router.get('/', function (req, res) {
-        
-        res.render('index', model);
-        
+
+      var states = ['disconnected','connected','connecting','disconnecting'];
+
+      var dbState= states[mongoose.connection.readyState];
+
+      res.render('index',{state: dbState});
+
     });
+
+
 
 };
