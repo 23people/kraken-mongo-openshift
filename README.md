@@ -36,6 +36,7 @@ Creating a kraken-mongodb-openshift project
 
 * Finally.
 ```
+    git commit -a -m 'project created...' 
     git push
 ```
 Changing local mongodb url
