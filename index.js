@@ -10,7 +10,8 @@ var kraken = require('kraken-js'),
         onconfig: function (config, next) {
             //any config setup/overrides here
 
-            db.config(config.get('databaseConfig'));
+            var databaseConfig = config.get('databaseConfig');
+            db.config(databaseConfig);
 
             next(null, config);
         }
