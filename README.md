@@ -11,9 +11,9 @@ Creating a kraken-mongodb-openshift project
 
 * First, create a scalable openshift app with rhc tools. A gear is not enough for having a Kraken Nodejs app with a 500 MB MongoDb installation.
 
-
+```
     rhc app create <appname> nodejs-0.10 mongodb-2.4 -s
-
+```
 
 * Optionally set your openshift NODE_ENV for production
 
