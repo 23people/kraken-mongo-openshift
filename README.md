@@ -18,7 +18,7 @@ Creating a kraken-mongodb-openshift project
 * Optionally set your openshift NODE_ENV for production
 
 ```
-    rhc set-env NODE_ENV=production -a \<appname\>
+    rhc set-env NODE_ENV=production -a <appname>
 ```
 
 * Merge this repository with your app
