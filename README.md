@@ -17,34 +17,35 @@ Creating a kraken-mongodb-openshift project
 
 * Optionally set your openshift NODE_ENV for production
 
-
-    rhc set-env NODE_ENV=production -a <appname>
-
+```
+    rhc set-env NODE_ENV=production -a \<appname\>
+```
 
 * Merge this repository with your app
 
-
+```
     cd <appname>
     git remote add upstream -m master https://github.com/Perfect6/kraken-mongo-openshift
     git pull -s recursive -X theirs upstream master
 
+```
 
 * Execute `npm install` and start with `npm start`.
 
 * Node cartridge don't support grunt and/or bower so make sure to execute `grunt build` and push .build folder changes to openshift.
 
 * Finally.
-
-
+```
     git push
-
+```
 Changing local mongodb url
 ---------------------------------------
 
 In `config/development.json` change databaseConfig
 
-
+```
     "databaseConfig": {
       "mongoDbUrl" : "mongodb://user:password@localhost:27017/",
       "dbName": "dev-db"
     }
+```
