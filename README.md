@@ -25,7 +25,7 @@ Creating a kraken-mongodb-openshift project
 
 ```
     cd <appname>
-    git remote add upstream -m master https://github.com/Perfect6/kraken-mongo-openshift
+    git remote add upstream -m master https://github.com/23people/kraken-mongo-openshift
     git pull -s recursive -X theirs upstream master
 
 ```
